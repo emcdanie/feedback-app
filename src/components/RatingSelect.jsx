@@ -9,8 +9,9 @@ function RatingSelect({ select, selected }) {
     select(+e.currentTarget.value)
   }
 
-    return (
-     <ul className='rating'>
+  // NOTE: simplified with iteration
+  return (
+    <ul className='rating'>
       {Array.from({ length: 10 }, (_, i) => (
         <li key={`rating-${i + 1}`}>
           <input
