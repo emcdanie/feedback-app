@@ -24,6 +24,8 @@ export const FeedbackProvider =({children}) => {
     item:{},
     edit: false
   })
+
+
 //add feedback
   const addFeedback = (newFeedback) => {
     newFeedback.id = uuidv4()
@@ -52,6 +54,8 @@ return (
         deleteFeedback,
         addFeedback,
         editFeedback,
+        feedbackEdit,
+   
        
       }}
     >
